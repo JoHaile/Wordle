@@ -10,7 +10,7 @@ function App() {
     currentGuess: 0,
   });
 
-  console.log(store.word);
+  // console.log(store.word);
 
   // Use a named function for the keyup event so removal works correctly
   useEffect(() => {
