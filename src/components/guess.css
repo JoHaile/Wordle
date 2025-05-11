@@ -1,0 +1,41 @@
+.parent-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box {
+  align-items: center;
+  border: 2px black solid;
+  background-color: #47474798;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 65px;
+  width: 65px;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: 1s ease-out;
+}
+
+.right {
+  background-color: #50971d;
+  animation: rotate 1s ease-out;
+}
+
+.may {
+  background-color: #baba49;
+  animation: rotate 1s ease-out;
+}
+
+.wrong {
+  background-color: #29262698;
+  border: 2px #5a2424 solid;
+  animation: rotate 1s ease-out;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateY(90deg);
+  }
+}
