@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Guess from "./components/Guess";
 import NavBar from "./components/NavBar";
-import wordStore from "./services/index.json";
+import wordStore from "./services/words.json";
 
 function App() {
   const [store, setStore] = useState({
