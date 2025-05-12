@@ -39,3 +39,14 @@
     transform: rotateY(90deg);
   }
 }
+
+@media (max-width: 500px) {
+  .parent-box {
+    gap: 10px;
+  }
+  .box {
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+  }
+}
