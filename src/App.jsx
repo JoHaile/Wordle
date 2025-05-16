@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Guess from "./components/Guess";
 import NavBar from "./components/NavBar";
 import wordStore from "./services/words.json";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function App() {
   const [store, setStore] = useState({
@@ -127,7 +126,6 @@ function App() {
             (lost() && "YOU LOST 🤦‍♂️ Better luck next time 😔")}
         </h2>
       </div>
-      <SpeedInsights />
     </>
   );
 }
