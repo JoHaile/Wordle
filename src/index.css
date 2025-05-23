@@ -56,3 +56,10 @@ p {
 h3 span {
   color: #50971d;
 }
+
+.instruction {
+  position: absolute;
+  width: 30vw;
+  left: 10px;
+  top: 40%;
+}

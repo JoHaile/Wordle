@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Guess from "./components/Guess";
 import NavBar from "./components/NavBar";
-import wordStore from "./services/words.json";
+import wordStore from "./services/index.json";
+import Instruction from "./components/Instruction";
 
 function App() {
   const [store, setStore] = useState({
@@ -87,6 +88,8 @@ function App() {
   return (
     <>
       <NavBar />
+
+      {store.currentGuess === 0 && <Instruction />}
 
       <div className="parent">
         <div className="container">
